@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src=""></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Birlamchi Vue.js Toggle Switch</h1>
+        <h4>Vue.js orqali tez va oson boshqarish uchun toggle switch yaratish</h4>
+      </div>
+      
+      <div class="container" id="app">
+        
+        <div align="center" style="padding-bottom:30px;">
+          <vue-toggle :toggled.sync="toggled1" label="Yoqilgan"></vue-toggle> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <vue-toggle :toggled.sync="toggled2" label="O'chirilgan"></vue-toggle>
+        </div>
+        <h3>Kodning tavsifi:</h3>
+        <div class="row">
+          <div class="col-sm-8">
+            <p>Vue yordamida toggle switch yaratish kerak bo'lsa, ushbu misolga qarang. Ayrim holatlarda uni yoqilgan, yoki sukutlangan holatda qo'llash talab qilinsa, quyidagi misolga o'xshab ishlatishingiz mumkin.</p>
+            <code>
+              &lt;vue-toggle :toggled.sync=&quot;<b>toggled1</b>&quot; label=&quot;<b>Yoqilgan</b>&quot;&gt;&lt;/vue-toggle&gt;
+            </code>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1">
+            <vue-toggle :toggled.sync="toggled1" label="Yoqilgan"></vue-toggle>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-sm-8">
+            <p>Ishlatilmaydigan holatdagi togglening oddiy misoli shuni o'z ichiga oladi.</p>
+            <code>
+              &lt;vue-toggle :toggled.sync=&quot;<b>toggled2</b>&quot; label=&quot;<b>O'chirilgan</b>&quot;&gt;&lt;/vue-toggle&gt;
+            </code>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1">
+            <vue-toggle :toggled.sync="toggled2" label="O'chirilgan"></vue-toggle>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-sm-8">
+            <p>Agar proyektingizda labellarni ishlash kerak bo'lmasa, label qiymatini ishlatishingizga haq yo'q.</p>
+            <code>
+              &lt;vue-toggle :toggled.sync=&quot;<b>toggled3</b>&quot;&gt;&lt;/vue-toggle&gt;
+            </code>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1">
+            <vue-toggle :toggled.sync="toggled3"></vue-toggle>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Toggle Template -->
+      <!-- Bu, Vue Toggle componentining HTML qismi -->
+      <template id="toggle">
+        <span class="fa toggle" v-bind:class="{'fa-toggle-on': toggled, 'fa-toggle-off': !toggled, 'text-success': toggled, 'text-muted': !toggled}" @click="toggled = !toggled"></span> <span class="toggle-label" v-show="label">{{ label }}</span>
+      </template>
+</body>
+</html>

@@ -1,0 +1,79 @@
+$purple: #5c4084;
+
+body {
+  background-color: $purple;
+  padding: 50px;
+  color: #555;
+}
+.fa {
+  font-size: 40px;
+  cursor: pointer;
+}
+.text-success {
+  color: $purple;
+}
+.toggle-label {
+    display: inline-block;
+    padding: 2px 0 0 4px;
+    vertical-align: top;
+    font-size: 24px;
+    color: #777;
+}
+.container {
+  background-color: #fff;
+  padding: 40px 80px;
+  border-radius: 8px;
+}
+.heading {
+  text-align: center;
+  h1 {
+    background: -webkit-linear-gradient(#fff, #999);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    margin: 0 0 5px 0;
+    font-weight: 900;
+    font-size: 4rem;
+    color: #fff;
+  }
+  h4 {
+    color: lighten(#5c3d86,30%);
+    text-align: center;
+    margin: 0 0 35px 0;
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+.options {
+  @media (min-width: 992px) {
+    padding-top: 80px;
+  }
+}
+.btn{
+  outline: none !important;
+}
+.btn.btn-primary {
+  background-color: $purple;
+  border-color: $purple;
+  outline: none;
+  &:hover {
+    background-color: darken($purple, 10%);
+    border-color: darken($purple, 10%);
+  }
+  &:active, &:focus {
+    background-color: lighten($purple, 5%);
+    border-color: lighten($purple, 5%);
+  }
+}
+.btn.btn-default {
+  &:hover {
+    background-color: darken($purple, 10%);
+    border-color: darken($purple, 10%);
+    color: #fff;
+  }
+  &:active, &:focus {
+    background-color: lighten($purple, 5%);
+    border-color: lighten($purple, 5%);
+    color: #fff;
+  }
+}

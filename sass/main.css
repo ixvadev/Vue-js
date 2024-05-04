@@ -1,0 +1,84 @@
+body {
+  background-color: #5c4084;
+  padding: 50px;
+  color: #555;
+}
+
+.fa {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.text-success {
+  color: #5c4084;
+}
+
+.toggle-label {
+  display: inline-block;
+  padding: 2px 0 0 4px;
+  vertical-align: top;
+  font-size: 24px;
+  color: #777;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px 80px;
+  border-radius: 8px;
+}
+
+.heading {
+  text-align: center;
+}
+.heading h1 {
+  background: -webkit-linear-gradient(#fff, #999);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  margin: 0 0 5px 0;
+  font-weight: 900;
+  font-size: 4rem;
+  color: #fff;
+}
+.heading h4 {
+  color: #a990cc;
+  text-align: center;
+  margin: 0 0 35px 0;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+@media (min-width: 992px) {
+  .options {
+    padding-top: 80px;
+  }
+}
+
+.btn {
+  outline: none !important;
+}
+
+.btn.btn-primary {
+  background-color: #5c4084;
+  border-color: #5c4084;
+  outline: none;
+}
+.btn.btn-primary:hover {
+  background-color: #442f62;
+  border-color: #442f62;
+}
+.btn.btn-primary:active, .btn.btn-primary:focus {
+  background-color: #684895;
+  border-color: #684895;
+}
+
+.btn.btn-default:hover {
+  background-color: #442f62;
+  border-color: #442f62;
+  color: #fff;
+}
+.btn.btn-default:active, .btn.btn-default:focus {
+  background-color: #684895;
+  border-color: #684895;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
